@@ -60,7 +60,7 @@ var products = {
 
     {
       "name": "Cake Cone",
-      "description": "Basic, all-purpose, no-frills cone",
+      "description": "Basic, all-purpose, no-frils cone",
       "price": "0.00"
     },
 

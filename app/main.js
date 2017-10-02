@@ -1,21 +1,13 @@
-// Code that pulls in products the right way
-// This will be sneaky 
-
-
-
 document.onreadystatechange = function() {
   if (document.readyState === "interactive") {
 
+    // Sneaky code that pulls in products the right way
     $.getScript('products.js')
       .done(setup)
       .fail(oops);
 
   }
 };
-
-function oops() {
-  alert("Problem loading data file!");
-}
 
 function setup() {
 
@@ -26,6 +18,10 @@ function setup() {
     content.innerHTML += formatSection(sectionName);
   });
 
+}
+
+function oops() {
+  alert("Problem loading data file!");
 }
 
 function formatSection(sectionName) {
