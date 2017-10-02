@@ -17,7 +17,7 @@ function setup() {
 }
 
 function formatSection(sectionName) {
-  var results = "<h2>" + sectionName + "</h2>";
+  var results = "<h2 class="category">" + sectionName + "</h2>";
   var section = products[sectionName]; 
 
   results  += "<ul>";

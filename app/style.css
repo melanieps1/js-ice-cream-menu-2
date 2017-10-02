@@ -57,3 +57,7 @@ li {
 	color: white;
 	text-align: center;
 }
+
+.category {
+	columns: 2;
+}
