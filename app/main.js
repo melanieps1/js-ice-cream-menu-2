@@ -17,14 +17,15 @@ function setup() {
 }
 
 function formatSection(sectionName) {
-  var results = "<h2 class="category">" + sectionName + "</h2>";
+  var results = "<h2>" + sectionName + "</h2>";
   var section = products[sectionName]; 
+  var menuItem = document.getElementsByClassName('list-item');
 
   results  += "<ul>";
 
   section.forEach(function(menuItem) {
 
-    results += "<li>" + formatMenuItem(menuItem) + "</li>";
+    results += "<li class='list-item'>" + formatMenuItem(menuItem) + "</li>";
 
   });
 
@@ -37,10 +38,18 @@ function formatSection(sectionName) {
 function formatMenuItem(menuItem) {
   var results = "<img src='" + menuItem.image + "' width='24px'>" + "<span class='itemName'>" + menuItem.name + "</span><br />";
 
-  // results += "<img src='" + menuItem.image + "' width='24px'>" + "<br>";
   results += menuItem.description + "<br>";
   results += menuItem.price;
 
   return results;
+    console.log("hi");
+  sectionName.addEventListener('click', expandCollapse);
 
+}
+
+function expandCollapse(sectionName) {
+
+  if (menuItem.style.display != 'block') {
+    menuItem.style.display = 'block';
+  }
 }

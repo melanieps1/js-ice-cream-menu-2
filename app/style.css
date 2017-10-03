@@ -7,11 +7,6 @@ body {
 	margin: 0;
 }
 
-#content {
-	margin: 0;
-	padding: 0;
-}
-
 .header {
 	color: white;
 	background-color: #aee2ce;
@@ -29,7 +24,7 @@ h2 {
 	color: #222;
 	font-family: 'Roboto Slab', serif;
 	font-weight: 400;
-	text-align: left;
+	text-align: center;
 }
 
 .itemName {
@@ -41,15 +36,20 @@ h2 {
 	margin: auto;
 }
 
-li {
+ul {
+	padding-left: 0;
+}
+
+.list-item {
 	color: #222;
+	/*display: none;*/
 	font-family: 'Roboto', serif;
 	font-size: 14px;
 	font-weight: 400;
 	list-style-type: none;
 	margin: auto;
 	padding: 0;
-	text-align: left
+	text-align: center;
 }
 
 #subheader {
@@ -58,6 +58,6 @@ li {
 	text-align: center;
 }
 
-.category {
+/*.category {
 	columns: 2;
-}
+}*/
