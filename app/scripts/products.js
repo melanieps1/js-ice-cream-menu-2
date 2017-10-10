@@ -1,3 +1,17 @@
+// Heath explanation for programmatically building the below object
+
+// var products = {};
+
+// products[ "Regular Flavors" ] = [];
+// products[ "Regular Flavors" ].push(
+// 	{
+// 		"name": "Chocolate",
+//       	"description": "Loved by kids of all ages!",
+//       	"price": "$2.00",
+//       	"image": "images/chocolate.png"	
+// 	}
+// );
+
 var products = {
   
   "Regular Flavors": [

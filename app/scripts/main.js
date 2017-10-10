@@ -1,3 +1,10 @@
+requirejs(["helper/util"], function(util) {
+    //This function is called when scripts/helper/util.js is loaded.
+    //If util.js calls define(), then this function is not fired until
+    //util's dependencies have loaded, and the util argument will hold
+    //the module value for "helper/util".
+});
+
 document.onreadystatechange = function() {
   if (document.readyState == "complete") {
     setup();
@@ -6,12 +13,12 @@ document.onreadystatechange = function() {
 
 function setup() {
   var content1 = document.getElementById('content-1');
-  var content2 = document.getElementById('content-2');
+  // var content2 = document.getElementById('content-2');
   var sections = Object.keys(products);
 
   sections.forEach(function(sectionName) {
     content1.innerHTML += formatSection(sectionName);
-    content2.innerHTML += formatSection(sectionName);
+    // content2.innerHTML += formatSection(sectionName);
   });
 
 }
@@ -43,13 +50,13 @@ function formatMenuItem(menuItem) {
 
   return results;
     console.log("hi");
-  sectionName.addEventListener('click', expandCollapse);
+  // sectionName.addEventListener('click', expandCollapse);
 
 }
 
-function expandCollapse(sectionName) {
+// function expandCollapse(sectionName) {
 
-  if (menuItem.style.display != 'block') {
-    menuItem.style.display = 'block';
-  }
-}
+//   if (menuItem.style.display != 'block') {
+//     menuItem.style.display = 'block';
+//   }
+// }
